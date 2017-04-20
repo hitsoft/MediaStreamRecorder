@@ -845,7 +845,7 @@ function MediaRecorderWrapper(mediaStream) {
 
             // how to fix FF-corrupt-webm issues?
             // should we leave this?          e.data.size < 26800
-            if (!e.data || !e.data.size || e.data.size < 26800 || firedOnDataAvailableOnce) {
+            if (!e.data || !e.data.size || e.data.size < 2048 || firedOnDataAvailableOnce) {
                 return;
             }
 
